@@ -22,7 +22,7 @@ How To
 1. `cd` to the directory containing your source files
 2. Create a .press.yml config file, use `srcpress gen-config` to generate a template file
 3. Run source_press from the command-line with `srcpress`
-4. That's it, other options and language-specific settings are described in the template `.press.yml` file 
+4. That's it, other options and language-specific settings are described in the template `.press.yml` file
 
 
 Configuring Source Press
@@ -34,21 +34,17 @@ In order for *source_press* to work you'll need to provide a few details in a .p
 
     $ srcpress gen-config
 
-## Using a config file with a different name
-
-    $ srcpress config=file_name.yml
-
 ## Settings
 
-###OutputFile:
+### OutputFile:
 
 Name + extension of compiled file. Can be left as null/blank.
 
-###OverrideOuput:
+### OverrideOuput:
 
 When set to true, overrides output file if it's already in the directory.
 
-###ImportKeywords:
+### ImportKeywords:
 
 Language specific file/library import keywords.
 
@@ -59,10 +55,25 @@ Language specific file/library import keywords.
 
 Can be left as null/blank
 
-###FileOrder:
+### FileOrder:
 
 Relative/full path to files in the order
 in which they should appear in the compiled file.
 
 If the order is unimportant, please include a path
 to the directory/directories containing the files.
+
+Misc Command-line Options
+=========================
+
+### Using a config file with a different name
+
+    $ srcpress config=file_name.yml
+
+### Only output errors and warnings
+
+    $ srcpress --silent
+
+### Verify gem version
+
+    $ srcpress -v
