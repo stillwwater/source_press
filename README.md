@@ -40,15 +40,15 @@ In order for *source_press* to work you'll need to provide a few details in a .p
 
 ## Settings
 
-###OutputFile:
+### OutputFile:
 
 Name + extension of compiled file. Can be left as null/blank.
 
-###OverrideOuput:
+### OverrideOuput:
 
 When set to true, overrides output file if it's already in the directory.
 
-###ImportKeywords:
+### ImportKeywords:
 
 Language specific file/library import keywords.
 
