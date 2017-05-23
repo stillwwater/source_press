@@ -1,0 +1,27 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - test/**/*
+    - ./*.gemspec
+
+Style/EndOfLine:
+  Enabled: false
+
+# Prefer double quotes
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Disallow methods longer than 15 lines
+Metrics/MethodLength:
+  CountComments: false
+  Max: 15
+
+Metrics/AbcSize:
+  Max: 18
+
+Metrics/ClassLength:
+  Max: 200

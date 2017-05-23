@@ -1,0 +1,29 @@
+# source_press configuration file
+
+# Name + extension of compiled file.
+# Can be left as null/blank
+OutputFile: null
+
+# When set to true, overrides output file if it's
+# already in the directory.
+OverrideOutput: false
+
+# Language specific file/library import keywords.
+# ie:
+# Ruby   - 'require', 'require_relative'
+# Python - 'import', 'from'
+# C/C++  - '#include'
+# Can be left as null/blank
+ImportKeywords:
+  - require
+  - require_relative
+
+# Relative/full path to files in the order
+# in which they should appear in the compiled file.
+#
+# If the order is unimportant, please include a path
+# to the directory/directories containing the files.
+FileOrder:
+  - ex_files/c1.rb
+  - ex_files/c2.rb
+  - ex_files/main.rb
