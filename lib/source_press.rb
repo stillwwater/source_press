@@ -28,5 +28,3 @@ def main(args)
   end
   start_press(config, is_silent)
 end
-
-main(ARGV)
