@@ -52,9 +52,12 @@ module Press
     #
     def error_check(paths)
       e = check_files(paths)
-      Message::Error.no_files(e) unless e.empty?
+      Message::Error.no_files(e) unless e.empty? && file_order.any?
+
+      file_order.map! { |f| File.absolute_path(f) }
 
       e = check_extnames
+      self.ext ||= ""
       Message::Warning.ext_warn(e, ext) unless e.empty?
     end
 
@@ -74,12 +77,12 @@ module Press
 
         if Dir.exist?(f)
           # Get files in directory
-          Dir["#{f}/*"].each { |x| file_order << x unless Dir.exist?(f) }
+          Dir["#{f}/*"].each { |x| Dir.exist?(x) || file_order << x }
           next
         end
 
         if File.exist?(f)
-          file_order << File.absolute_path(f)
+          file_order << f
           next
         end
 
