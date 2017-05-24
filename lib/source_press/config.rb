@@ -15,7 +15,7 @@ module Config
   #
   def self.default
     <<~END
-      # ScriptPress configuration file
+      # srcpress configuration file
 
       # Name + extension of compiled file.
       # Can be left as null/blank
