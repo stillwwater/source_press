@@ -2,4 +2,4 @@
 
 require "source_press"
 
-main(ARGV)
+SourcePress.new.main(ARGV)
