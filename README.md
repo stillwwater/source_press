@@ -1,4 +1,6 @@
-﻿Source Press
+﻿[![Gem Version](https://badge.fury.io/rb/source_press.svg)](https://badge.fury.io/rb/source_press)
+
+Source Press
 ============
 
 *source_press* allows you to combine multiple source files into a single file.
