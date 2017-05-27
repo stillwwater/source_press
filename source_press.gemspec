@@ -4,10 +4,10 @@ Gem::Specification.new do |s|
   s.name        = "source_press"
   s.version     = SourcePress::VERSION
   s.executables << "srcpress"
-  s.date        = "2017-05-22"
+  s.date        = "2017-05-24"
   
   s.summary     = "Compiles multiple source files into a single file"
-  s.description = "Easily combine multiple source files into a single file, works on any language as long as .press.yml is configured correctly."
+  s.description = "Easily combine multiple source files into a single file, works on any language as long as .press.yml is configured correctly. Run with `$ srcpress`"
   s.authors     = ["D Stillwwater"]
   s.email       = "stillwwater@gmail.com"
   
